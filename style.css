@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: slategrey;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 450px;
+  width: 500px;
+}
+
+header {
+  align-items: center;
+  background: coral;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+.player-container,
+.computer-container {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 40px;
+  text-align: center;
+}
+
+h2 {
+  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 1;
+  margin-bottom: 20px;
+}
+
+.fa-hand-rock {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-row-start: 2;
+}
+
+.fa-hand-paper {
+  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 2;
+}
+
+.fa-hand-scissors {
+  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-row-start: 2;
+}
+
+.far {
+  font-size: 3rem;
+}
+
+.player-container .far {
+  color: indianred;
+  cursor: pointer;
+}
+
+.computer-container .far {
+  color: lightseagreen;
+}
+
+.selected {
+  color: slategray !important;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
